@@ -29,6 +29,5 @@ document.write("~386 A.D. - St. Ambrose - “[In] this one thing...we seem to ex
 document.write("<br \/>");
 document.write("~400 A.D. - The Apostolic Constitutions - “[God] is not the God of the dead, but of the living; for all live to Him. Wherefore, of those that live with God, even their very relics are not without honour. For even Elisha the prophet, after he was fallen asleep, raised up a dead man who was slain by the pirates of Syria. For his body touched the bones of Elisha, and he arose and revived. Now this would not have happened unless the body of Elisha were holy.” (Apostolic Constitutions Book 6 Section 6)<br \/>");
 document.write("<br \/>");
-document.write("<br \/>");
 document.write("404 A.D. - St. Jerome - “We, it is true, refuse to worship or adore...the relics of the martyrs...the angels and archangels...and every name that is named, not only in this world but also in that which is to come. ... Still, we honour the relics of the martyrs, that we may adore Him whose martyrs they are. We honour the servants that their honour may be reflected upon their Lord who Himself says: “he that receives you receives me.\" ... If the relics of the martyrs are not worthy of honour, how comes it that we read ‘precious in the sight of the Lord is the death of his saints?’ ” (Letter 109 Paragraphs 1-2)<br \/>");
 }
