@@ -1,1 +1,95 @@
-<span>Howdy!</span>
+<html>
+  <head>
+    /* Header top navigation menu
+-----------------------------------------------*/
+#topnav-outside {background:#fff;width:100%;min-height:30px;margin:0 auto;padding:0;-moz-box-shadow: 0 8px 6px -6px #ccc;-webkit-box-shadow: 0 8px 6px -6px #ccc;box-shadow: 0 8px 6px -6px #ccc;z-index:15;}
+#topnav-intside {max-width:1120px;min-height:30px;margin:0 auto;padding:0;}
+.bofollowbutton-nav{float:right;margin:0;padding:8px 5px 0 5px;overflow:hidden;clear:both;}
+.status-msg-wrap{display:none;}
+#bonav li.has-child {background-image: url(https://3.bp.blogspot.com/-udDmmA77Cv4/WBnvafIeE8I/AAAAAAAAD84/Dp8DbiKr1WE0njmWZpgH9EeoZYsRW-9FQCEw/s1600/bo_arrow_dropdown.gif);background-repeat: no-repeat;background-position: 95% 50%;}
+#bonav{max-width:950px;text-transform:uppercase;}
+#bonav > a{display: none;}
+#bonav li{list-style-type: none;position: relative;}
+#bonav li a{display: block;color: #4285f4;text-decoration:none;}
+#bonav li a:active{background-color: #c00 !important;}
+#bonav span:after{height: 0;width: 0;border: 0.313em solid transparent;border-bottom: none;border-top-color: #efa585;content: '';display: inline-block;vertical-align: middle;position: relative;right: -0.313em;}
+#bonav > ul{background-color: #fff;height: 3.75em;margin:0;padding:0;}
+#bonav > ul > li{width: 20%;height: 100%;float: left;}
+#bonav > ul > li.home-icon{max-width:120px;}
+#bonav > ul > li > a{font-family:'Oswald', sans-serif;height: 100%;text-align: center;font-size: 1.0em;line-height: 3.7em;-webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;-o-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
+#bonav > ul > li:not( :last-child ) > a{border-right: 1px solid #f4f4f4;}
+#bonav > ul > li:hover > a,#bonav > ul:not( :hover ) > li.active > a{color: #333;}
+#bonav li ul{background-color: #f9f9f9;position: absolute;display: none;top: 100%;margin:0;padding:0;}
+#bonav li:hover ul{display: block;left: 0;right: 0;}
+#bonav li:not( :first-child ):hover ul{//left: -1px;}
+#bonav li ul a{font-family:'Oswald', sans-serif;font-size: 1.0em;border-top: 1px solid #f4f4f4;padding: 1.0em;-webkit-transition: all 0.3s ease-in;
+-moz-transition: all 0.3s ease-in;
+-o-transition: all 0.3s ease-in;
+transition: all 0.3s ease-in;}
+#bonav li ul li a:hover,#bonav li ul:not( :hover ) li.active a{background-color: #333;}
+@media only screen and ( max-width: 60em )
+#bonav{font-size: 75%;position: relative;top: auto;left: auto;}
+#bonav > a{font-size: 1.25em;text-decoration: none;color: #fff;background: #3d5c99;text-align: center;padding: 15px 0;display: none;text-align:center;overflow:hidden;}
+#bonav > a:after{top: 60%;}
+#bonav:not( :target ) > a:first-of-type,#bonav:target > a:last-of-type{display: block;}
+#bonav > ul{height: auto;display: none;position: absolute;left: 0;right: 0;}
+#bonav:target > ul{display: block;}
+#bonav > ul > li{width: 100%;float: none;}
+#bonav > ul > li > a{height: auto;text-align: left;padding: 0 0.833em;}
+#bonav > ul > li:not( :last-child ) > a{border-right: none;border-bottom: 1px solid #f4f4f4;}
+#bonav li ul{position: static;padding: 1.25em;padding-top: 0;}
+#bonav li ul{background-color: #f8f8f8;}
+#bonav > ul{background-color: #f8f8f8;}
+#bonav li ul a{border-top: 1px solid #f1f1f1;}
+#bonav > ul > li > a{border-top: 1px solid #f1f1f1;}
+}
+  </head>
+  <body>
+    <div id='topnav-outside'>
+<div id='topnav-intside'>
+<div class='bofollowbutton-nav'>
+<a href='https://www.facebook.com/blogornate' target='_blank'>
+<img src='https://3.bp.blogspot.com/-9uvViy476uA/WBnvaVnTJ9I/AAAAAAAAD88/SBb3JAM9MYUX2u1AP4EODrCqFJPbgY6ewCLcB/s1600/facebook_bo.png'/>
+</a>    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    <a href='https://twitter.com/Blog_Ornate' target='_blank'>
+<img src='https://2.bp.blogspot.com/-Llms3b5Feik/WBnva0SFZfI/AAAAAAAAD9E/qv5l7aixry0yUYHfEdmoz_h107xu9XUbwCLcB/s1600/twitter_bo.png'/>
+</a>    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    <a href='https://plus.google.com/+Blogornatepage' target='_blank'>
+<img src='https://2.bp.blogspot.com/-qdOhOn1kH28/WBnvaXbQYnI/AAAAAAAAD9A/i1eHncGso_g9ICGPBSeWO68WE52TZDJ6QCEw/s1600/gplus_bo.png'/>
+</a>
+</div>
+<div id='bonav' role='navigation'>
+<a href='#bonav' title='Show navigation'>
+&#9776; Show Menu
+</a>
+<a href='#' title='Hide navigation'>
+&#9776; Hide Menu
+</a>
+<ul>
+<li class='home-icon'>
+<a href='/'><img src='https://4.bp.blogspot.com/-dNtJRo_QsMY/WBnv-7WZyBI/AAAAAAAAD9I/HCxJTkIOqQwzWAK8CynKtEl9C7L-2rSgACLcB/s1600/blog-ornate-home-icon.png' style='height:20px;width:20px;margin:14px 0 0 0;'/></a>
+</li>
+<li class='has-child'><a aria-haspopup='true' href='#'>Menu Item 1</a>
+<ul>
+<li><a href='#'>Sub Menu Item 1</a></li>
+<li><a href='#'>Sub Menu Item 1.1</a></li>
+</ul>
+</li>
+<li class='has-child'><a aria-haspopup='true' href='#'>Menu Item 2</a>
+<ul>
+<li><a href='#'>Sub Menu Item 2</a></li>
+<li><a href='#'>Sub Menu Item 2.2</a></li>
+<li><a href='#'>Sub Menu Item 2.3</a></li>
+</ul>
+</li>
+<li class='has-child'><a aria-haspopup='true' href='#'>Menu Item 3</a>
+<ul>
+<li><a href='#'>Sub Menu Item 3</a></li>
+</ul>
+</li>
+<li><a href='#'>Menu Item 4</a></li>
+<li><a href='#'>Menu Item 5</a></li>
+</ul>
+</div>
+</div>
+</div>
+  </body>
+</html>
