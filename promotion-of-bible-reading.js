@@ -1,3 +1,4 @@
+function promotion_of_bible_reading(){
 document.write("410 A.D. - St. Jerome - &#8220;[I follow] the command[s] of Christ: Search the Scriptures, and Seek and you shall find. Christ will not say to me what he said to the Jews: You erred, not knowing the Scriptures and not knowing the power of God. ... [For] ignorance of Scripture is ignorance of Christ.&#8221; (Commentary on Isaiah Book 18)<br \/>");
 document.write("<br \/>");
 document.write("Before 604 A.D. - Pope St. Gregory I - \"The Emperor of heaven, the Lord of men and of angels, has sent you His epistles for your life&#8217;s advantage&#8212;and yet you neglect to read them eagerly. Study them, I beg you, and meditate daily on the words of your Creator. Learn the heart of God in the words of God, that you may sigh more eagerly for things eternal, that your soul may be kindled with greater longings for heavenly joys.\" Letters, 5, 46.<br \/>");
@@ -33,3 +34,4 @@ document.write("<br \/>");
 document.write("1943 - Pope Pius XII -&nbsp;&#8220;[We wish] to dissipate the idea that the Church is opposed to or in any way impedes&nbsp;the reading of the Scriptures in the vernacular. ... Bishops should...lend help to those pious associations whose aim it is to spread copies of the Sacred Letters, especially of the Gospels, among the faithful, and to procure by every means that in Christian families the same be read daily with piety and devotion.&#8221;&nbsp;(Divino Afflante Spiritu 9, 51)<br \/>");
 document.write("<br \/>");
 document.write("1956 - Pope Pius XII -&nbsp;&#8220;[It] is clear that the faithful must seek from Scripture, tradition and the sacred liturgy&nbsp;as from a deep untainted source...the nourishment for the fostering and development of their religious fervor.&#8221;&nbsp;(Haurietis Aquas 100)");
+}
