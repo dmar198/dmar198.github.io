@@ -28,3 +28,9 @@ h1 {
 #main {
     margin: 2em 1em 1em;
 }
+#hiding {
+    display: none;
+}
+#showing {
+    display: block;
+}
