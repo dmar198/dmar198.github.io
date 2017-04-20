@@ -10,20 +10,24 @@ body {
     background: #f9f9f9;
     color: #000000;
 }
-header {
-    height: 60px;
-    background: #f9f9f9;
-}
 h1, h2, h3 {
     margin: 0;
     text-rendering: optimizeLegibility;
     color: #000000;
 }
-h1 {
+#navbar {
+    height:60px;
+    background: #e22626;
     font-size: 2em;
-    line-height: 58px;
+    line-height: 60px;
     text-align: center;
     font-weight: normal;
+    display:block;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    
 }
 #main {
     margin: 2em 1em 1em;
