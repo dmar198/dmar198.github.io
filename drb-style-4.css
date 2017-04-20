@@ -37,3 +37,6 @@ h1, h2, h3 {
 .showing div {
     display: block;
 }
+#contents {
+    padding-top:60px;
+}
