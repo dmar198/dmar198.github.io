@@ -37,11 +37,3 @@ h1, h2, h3 {
 .showing div {
     display: block;
 }
-span {
-    padding-top: 60px; 
-    margin-top: -60px;
-}
-a {
-    padding-top: 60px; 
-    margin-top: -60px;
-}
