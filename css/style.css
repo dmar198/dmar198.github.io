@@ -29,6 +29,10 @@ body {
     color: #ffffff;
     margin: auto;
 }
+#test {
+    text-align:center;
+    background: #e22626;
+}
 #menubutton {
     width: 30px;
     height: 30px;
