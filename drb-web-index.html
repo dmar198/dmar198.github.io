@@ -7,28 +7,22 @@
 	<title>Douay Rheims Bible</title>
         <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>      
         <script type="text/javascript" charset="utf-8">
-
              function onLoad()
              {
                   document.addEventListener("deviceready", onDeviceReady, true);
              }
-
              function onDeviceReady()
              {
                   // navigator.notification.alert("PhoneGap is working");
              }
-
         </script>
 
 <script type="text/javascript" charset="utf-8">
-
              document.addEventListener("deviceready", onDeviceReady, true);
-
              function onDeviceReady()
              {     
                    document.addEventListener("backbutton", BackKeyDown, true);
              }
-
              function BackKeyDown()
              {
                  navigator.notification.alert();
@@ -48,8 +42,14 @@
 	</script>
 </head>
 <body onload="onLoad();CONTENTS();">
-<div id="phonescreen">
-	<header></header>
+<div style="max-width: 600px;margin: auto;border: solid 1px #000000;">
+	<header>
+		<div id="navbar">
+                <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};" /></a>
+                Douay Rheims Bible
+                <a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';" /></a>
+                </div>
+	</header>
         
         <div id="contents">
         <a  onclick="GENESIS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#genesis">Genesis</a><br /><br />
@@ -128,16 +128,10 @@
         </div>
     
 	<section id="main" role="main">
-		<div id="test">
-                <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};" /></a>
-              	Douay Rheims Bible
-               	<a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';" /></a>
-		</div>
-		<div id="bibletext" style="margin-top: 80px;">
+		<div id="bibletext" style="margin-top:80px;">
                 <script type="text/javascript" src="js/bible.js"></script>
                 <script type="text/javascript" src="js/contents.js"></script>
 		</div>
-		
 	</section>
 
 	<footer></footer>
