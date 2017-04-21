@@ -10,6 +10,11 @@ body {
     background: #f9f9f9;
     color: #000000;
 }
+#phonescreen {
+    width:750px;
+    border:solid 1px #000000;
+    margin:auto;
+}
 h1, h2, h3 {
     margin: 0;
     text-rendering: optimizeLegibility;
