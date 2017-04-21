@@ -1,0 +1,86 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    height: 100%;
+}
+body {
+    padding: 0px;
+    margin: 0;
+    font-family: Georgia, sans-serif; 
+    background: #f9f9f9;
+    color: #000000;
+}
+h1, h2, h3 {
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    color: #000000;
+}
+#navbar {
+    height:3em;
+    background: #e22626;
+    font-size: 1em;
+    line-height: 3em;
+    text-align: center;
+    font-weight: normal;
+    display:block;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    overflow:hidden;
+    color:#ffffff;
+}
+#menubutton {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: .8em;
+    margin-top: .5em;
+    cursor: pointer;
+}
+#homebutton {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: .8em;
+    margin-top: .5em;
+    cursor: pointer;
+}
+#main {
+    margin: 2em 1em 1em;
+}
+#contents {
+    padding-top: 6em;
+    font-size: .8em;
+    background: #ffffff;
+    display: none;
+    padding-left: 10px;
+    font-weight:bold;
+}
+a.contentslinks {
+    text-decoration: none;
+    color:#000000;
+}
+a.contentslinks:visited {
+    color:#000000;
+}
+a.contentslinks:active {
+    color:#000000;
+}
+#nt {
+    font-size: 1.5em;
+}
+.hiding div {
+    display: none;
+}
+.showing div {
+    display: block;
+}
+.chapterbuttons {
+    border-style: solid;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
