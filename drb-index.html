@@ -49,9 +49,7 @@
 </head>
 <body onload="onLoad();CONTENTS();">
 <div id="phonescreen">
-	<header>
-		
-	</header>
+	<header></header>
         
         <div id="contents">
         <a  onclick="GENESIS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#genesis">Genesis</a><br /><br />
@@ -130,11 +128,13 @@
         </div>
     
 	<section id="main" role="main">
-		<div id="navbar">
-                <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};" /></a>
-                Douay Rheims Bible
-                <a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';" /></a>
-                </div>
+		<center>
+			<div id="navbar">
+                	<a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};" /></a>
+              		Douay Rheims Bible
+               		<a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';" /></a>
+			</div>
+		</center>
 		<div id="bibletext" style="margin-top:80px;">
                 <script type="text/javascript" src="js/bible.js"></script>
                 <script type="text/javascript" src="js/contents.js"></script>
