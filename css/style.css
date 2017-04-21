@@ -35,8 +35,10 @@ body {
     max-width: 600px;
     width: 120%;
     color: white;
-    margin-top: -10px;
-    height:3em;
+    margin-top: -50px;
+    margin-left: -10px;
+    height: 3em;
+    line-height: 3em;
 }
 #menubutton {
     width: 30px;
