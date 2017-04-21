@@ -82,6 +82,7 @@ a.contentslinks:active {
     margin: auto;
     /* margin: 2em 1em 1em; */
     max-width: 600px;
+    padding: 1em;
 }
 #bibletext {
     margin-top: 80px;
