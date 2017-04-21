@@ -27,6 +27,7 @@ body {
     top: 0px;
     left: 0px;
     max-width: 600px;
+    width:100%;
     overflow: hidden;
     color: #ffffff;
     margin: auto;
