@@ -63,6 +63,7 @@ body {
     display: none;
     padding-left: 10px;
     font-weight:bold;
+    max-width: 600px;
 }
 a.contentslinks {
     text-decoration: none;
