@@ -56,6 +56,14 @@ body {
     margin-top: .5em;
     cursor: pointer;
 }
+#versetoggler {
+    display: none;
+    height: 30px;
+    position: absolute;
+    top: 5em;
+    right:2em;
+    cursor: pointer;
+}
 #contents {
     padding-top: 6em;
     font-size: .8em;
