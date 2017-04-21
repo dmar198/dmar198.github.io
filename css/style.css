@@ -30,11 +30,13 @@ body {
     margin: auto;
 }
 #test {
-    text-align:center;
+    text-align: center;
     background: #e22626;
     max-width: 600px;
-    width:120%;
-    color:white;
+    width: 120%;
+    color: white;
+    margin-top: -10px;
+    height:3em;
 }
 #menubutton {
     width: 30px;
