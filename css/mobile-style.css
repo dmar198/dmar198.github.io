@@ -79,7 +79,9 @@ a.contentslinks:active {
     font-size: 1.5em;
 }
 #main {
-    margin: 2em 1em 1em;
+    margin: auto;
+    /* margin: 2em 1em 1em; */
+    max-width: 600px;
 }
 #bibletext {
     margin-top: 80px;
