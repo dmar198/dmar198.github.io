@@ -32,6 +32,8 @@ body {
 #test {
     text-align:center;
     background: #e22626;
+    max-width: 600px;
+    width:100%;
 }
 #menubutton {
     width: 30px;
