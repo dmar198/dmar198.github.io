@@ -15,11 +15,6 @@ body {
     border:solid 1px #000000;
     margin:auto;
 }
-h1, h2, h3 {
-    margin: 0;
-    text-rendering: optimizeLegibility;
-    color: #000000;
-}
 #navbar {
     height:3em;
     background: #e22626;
@@ -27,13 +22,13 @@ h1, h2, h3 {
     line-height: 3em;
     text-align: center;
     font-weight: normal;
-    display:block;
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100%;
-    overflow:hidden;
-    color:#ffffff;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
 }
 #menubutton {
     width: 30px;
