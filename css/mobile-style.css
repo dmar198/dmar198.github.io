@@ -14,6 +14,7 @@ body {
     max-width:600px;
     border:solid 1px #000000;
     margin:auto;
+    overflow:hidden;
 }
 #navbar {
     height:3em;
