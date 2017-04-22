@@ -53,7 +53,9 @@ body {
     top: 3em;
     right:2em;
     cursor: pointer;
-    float:right;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
 }
 #contents {
     padding-top: 6em;
