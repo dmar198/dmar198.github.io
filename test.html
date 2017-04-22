@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>The Challoner Bible</title>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>      
+        <script type="text/javascript" charset="utf-8">
+             function onLoad()
+             {
+                  document.addEventListener("deviceready", onDeviceReady, true);
+             }
+             function onDeviceReady()
+             {
+                  // navigator.notification.alert("PhoneGap is working");
+             }
+        </script>
+
+<script type="text/javascript" charset="utf-8">
+             document.addEventListener("deviceready", onDeviceReady, true);
+             function onDeviceReady()
+             {     
+                   document.addEventListener("backbutton", BackKeyDown, true);
+             }
+             function BackKeyDown()
+             {
+                 navigator.notification.alert();
+                 //navigator.app.exitApp();  // For Exit Application
+             }
+        </script>
+	<script type="text/javascript">
+		var shiftWindow = function() { scrollBy(0, -60) };
+		if (location.hash) shiftWindow();
+		window.addEventListener("hashchange", shiftWindow);
+	</script>
+	<script type="text/javascript">
+    function toggleverses() {
+    var x = document.getElementsByClassName("vnumber");
+    var i;
+    for (i = 0; i < x.length; i++) {if (x[i].style.display == 'none') {x[i].style.display = 'inline';} else {x[i].style.display = 'none';};}
+    }
+    </script>
+    <script type="text/javascript">
+    function versetoggleron() {document.getElementById("versetoggler").style.display = 'block';}
+    </script>
+    <script type="text/javascript">
+    function versetoggleroff() {document.getElementById("versetoggler").style.display = 'none';}
+    </script>
+	<meta name="description" content="The Challoner Bible">
+	<meta name="author" content="Dan Marcum dmar198@gmail">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Georgia:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/mobile-style.css">
+</head>
+<body onload="onLoad();CONTENTS();">
+<div style="max-width: 600px;margin: auto;border: solid 1px #000000;">
+	<header>
+		<div id="navbar">
+                <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};versetoggleroff();" /></a>
+                The Challoner Bible
+                <a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';versetoggleroff();" /></a>
+		</div>
+	<span onclick="toggleverses()" id="versetoggler">Toggle verses</span>
+	</header>
+        
+        <div id="contents">
+        <a  onclick="GENESIS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#genesis">Genesis</a><br /><br />
+        <a  onclick="EXODUS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#exodus">Exodus</a><br /><br />
+        <a  onclick="LEVITICUS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#leviticus">Leviticus</a><br /><br />
+        <a  onclick="NUMBERS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#numbers">Numbers</a><br /><br />
+        <a  onclick="DEUTERONOMY();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#deuteronomy">Deuteronomy</a><br /><br />
+        <a  onclick="JOSHUA();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#joshua">Joshua</a><br /><br />
+        <a  onclick="JUDGES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#judges">Judges</a><br /><br />
+        <a  onclick="RUTH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#ruth">Ruth</a><br /><br />
+        <a  onclick="FIRSTSAMUEL();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1samuel">1 Samuel</a><br /><br />
+        <a  onclick="SECONDSAMUEL();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2samuel">2 Samuel</a><br /><br />
+        <a  onclick="FIRSTKINGS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1kings">1 Kings</a><br /><br />
+        <a  onclick="SECONDKINGS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2kings">2 Kings</a><br /><br />
+        <a  onclick="FIRSTCHRONICLES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1chronicles">1 Chronicles</a><br /><br />
+        <a  onclick="SECONDCHRONICLES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2chronicles">2 Chronicles</a><br /><br />
+        <a  onclick="ESRA();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#esra">Esra</a><br /><br />
+        <a  onclick="NEHEMIAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#nehemiah">Nehemiah</a><br /><br />
+        <a  onclick="TOBIT();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#tobit">Tobit</a><br /><br />
+        <a  onclick="JUDITH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#judith">Judith</a><br /><br />
+        <a  onclick="ESTHER();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#esther">Esther</a><br /><br />
+        <a  onclick="FIRSTMACCABEES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1maccabees">1 Maccabees</a><br /><br />
+        <a  onclick="SECONDMACCABEES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2maccabees">2 Maccabees</a><br /><br />
+        <a  onclick="JOB();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#job">Job</a><br /><br />
+        <a  onclick="PSALMS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#psalms">Psalms</a><br /><br />
+        <a  onclick="PROVERBS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#proverbs">Proverbs</a><br /><br />
+        <a  onclick="ECCLESIASTES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#ecclesiastes">Ecclesiastes</a><br /><br />
+        <a  onclick="SONGS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#songs">Songs</a><br /><br />
+        <a  onclick="WISDOM();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#wisdom">Wisdom</a><br /><br />
+        <a  onclick="SIRACH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#sirach">Sirach</a><br /><br />
+        <a  onclick="ISAIAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#isaiah">Isaiah</a><br /><br />
+        <a  onclick="JEREMIAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#jeremiah">Jeremiah</a><br /><br />
+        <a  onclick="LAMENTATIONS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#lamentations">Lamentations</a><br /><br />
+        <a  onclick="BARUCH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#baruch">Baruch</a><br /><br />
+        <a  onclick="EZEKIEL();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#ezekiel">Ezekiel</a><br /><br />
+        <a  onclick="DANIEL();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#daniel">Daniel</a><br /><br />
+        <a  onclick="HOSEA();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#hosea">Hosea</a><br /><br />
+        <a  onclick="JOEL();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#joel">Joel</a><br /><br />
+        <a  onclick="AMOS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#amos">Amos</a><br /><br />
+        <a  onclick="OBADIAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#obadiah">Obadiah</a><br /><br />
+        <a  onclick="JONAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#jonah">Jonah</a><br /><br />
+        <a  onclick="HABAKKUK();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#habakkuk">Habakkuk</a><br /><br />
+        <a  onclick="ZEPHANIAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#zephaniah">Zephaniah</a><br /><br />
+        <a  onclick="HAGGAI();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#haggai">Haggai</a><br /><br />
+        <a  onclick="ZACHARIAH();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#zachariah">Zachariah</a><br /><br />
+        <a  onclick="MALACHI();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#malachi">Malachi</a><br /><br />
+        <span id="nt">&nbsp;&nbsp;&nbsp;The New Testament</span><br /><br />
+        <a  onclick="MATTHEW();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#matthew">Matthew</a><br /><br />
+        <a  onclick="MARK();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#mark">Mark</a><br /><br />
+        <a  onclick="LUKE();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#luke">Luke</a><br /><br />
+        <a  onclick="JOHN();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#john">John</a><br /><br />
+        <a  onclick="ACTS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#acts">Acts</a><br /><br />
+        <a  onclick="ROMANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#romans">Romans</a><br /><br />
+        <a  onclick="FIRSTCORINTHIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1corinthians">1 Corinthians</a><br /><br />
+        <a  onclick="SECONDCORINTHIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2corinthians">2 Corinthians</a><br /><br />
+        <a  onclick="GALATIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#galatians">Galatians</a><br /><br />
+        <a  onclick="EPHESIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#ephesians">Ephesians</a><br /><br />
+        <a  onclick="PHILIPPIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#philippians">Philippians</a><br /><br />
+        <a  onclick="COLOSSIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#colossians">Colossians</a><br /><br />
+        <a  onclick="FIRSTTHESSALONIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1thessalonians">1 Thessalonians</a><br /><br />
+        <a  onclick="SECONDTHESSALONIANS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2thessalonians">2 Thessalonians</a><br /><br />
+        <a  onclick="FIRSTTIMOTHY();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1timothy">1 Timothy</a><br /><br />
+        <a  onclick="SECONDTIMOTHY();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2timothy">2 Timothy</a><br /><br />
+        <a  onclick="TITUS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#titus">Titus</a><br /><br />
+        <a  onclick="PHILEMON();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#philemon">Philemon</a><br /><br />
+        <a  onclick="HEBREWS();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#hebrews">Hebrews</a><br /><br />
+        <a  onclick="JAMES();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#james">James</a><br /><br />
+        <a  onclick="FIRSTPETER();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1peter">1 Peter</a><br /><br />
+        <a  onclick="SECONDPETER();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2peter">2 Peter</a><br /><br />
+        <a  onclick="FIRSTJOHN();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#1john">1 John</a><br /><br />
+        <a  onclick="SECONDJOHN();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#2john">2 John</a><br /><br />
+        <a  onclick="THIRDJOHN();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#3john">3 John</a><br /><br />
+        <a  onclick="JUDE();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#jude">Jude</a><br /><br />
+        <a  onclick="REVELATION();document.getElementById('contents').style.display = 'none';window.scrollTo(0, 0);" class="contentslinks" href="#revelation">Revelation</a><br /><br />
+            <hr />
+        </div>
+    
+	<section id="main" role="main">
+		<div id="bibletext" style="margin-top:30px;">
+                <script type="text/javascript" src="js/bible2.js"></script>
+                <script type="text/javascript" src="js/contents.js"></script>
+		</div>
+	</section>
+
+	<footer></footer>
+</div>
+</body>
+</html>
