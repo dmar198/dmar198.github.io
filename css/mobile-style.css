@@ -29,17 +29,6 @@ body {
     color: #ffffff;
     margin: auto;
 }
-#test {
-    text-align: center;
-    background: #e22626;
-    max-width: 600px;
-    width: 119%;
-    color: white;
-    margin-top: -33px;
-    margin-left: -17px;
-    height: 3em;
-    line-height: 3em;
-}
 #menubutton {
     width: 30px;
     height: 30px;
@@ -59,10 +48,11 @@ body {
 #versetoggler {
     display: none;
     height: 30px;
-    position: absolute;
+    position: relative;
     top: 5em;
     right:2em;
     cursor: pointer;
+    float:right;
 }
 #contents {
     padding-top: 6em;
