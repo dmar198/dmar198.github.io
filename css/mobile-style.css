@@ -50,8 +50,8 @@ body {
     display: none;
     height: 30px;
     position: relative;
-    top: 3em;
-    right:2em;
+    top: 2em;
+    right: 1em;
     cursor: pointer;
     float: right;
     border: solid 3px #000000;
