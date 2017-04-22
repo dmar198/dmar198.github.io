@@ -64,10 +64,10 @@
 	<header>
 	<span onclick="toggleverses()" id="versetoggler">Toggle verses</span>
 		<div id="navbar">
-                <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};" /></a>
+                <a  href="#contents"><img src="../www/menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};versetoggleroff();" /></a>
                 Douay Rheims Bible
-                <a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';" /></a>
-                </div>
+                <a  href="#contents"><img src="../www/home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';versetoggleroff();" /></a>
+		</div>
 	</header>
         
         <div id="contents">
