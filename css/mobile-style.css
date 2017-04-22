@@ -102,3 +102,10 @@ a.contentslinks:active {
     text-align: center;
     background-color: #f0f0f0;
 }
+.notebox {
+    color: blue;
+}
+.note {
+    display: none;
+    color: blue;
+}
