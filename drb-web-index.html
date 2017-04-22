@@ -4,31 +4,25 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Douay Rheims Bible</title>
+	<title>The Challoner Bible</title>
         <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>      
         <script type="text/javascript" charset="utf-8">
-
              function onLoad()
              {
                   document.addEventListener("deviceready", onDeviceReady, true);
              }
-
              function onDeviceReady()
              {
                   // navigator.notification.alert("PhoneGap is working");
              }
-
         </script>
 
 <script type="text/javascript" charset="utf-8">
-
              document.addEventListener("deviceready", onDeviceReady, true);
-
              function onDeviceReady()
              {     
                    document.addEventListener("backbutton", BackKeyDown, true);
              }
-
              function BackKeyDown()
              {
                  navigator.notification.alert();
@@ -53,7 +47,7 @@
     <script type="text/javascript">
     function versetoggleroff() {document.getElementById("versetoggler").style.display = 'none';}
     </script>
-	<meta name="description" content="Douay Rheims Bible">
+	<meta name="description" content="The Challoner Bible">
 	<meta name="author" content="Dan Marcum dmar198@gmail">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Georgia:700' rel='stylesheet' type='text/css'>
@@ -64,7 +58,7 @@
 	<header>
 		<div id="navbar">
                 <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};versetoggleroff();" /></a>
-                Douay Rheims Bible
+                The Challoner Bible
                 <a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';versetoggleroff();" /></a>
 		</div>
 	<span onclick="toggleverses()" id="versetoggler">Toggle verses</span>
@@ -148,7 +142,7 @@
     
 	<section id="main" role="main">
 		<div id="bibletext" style="margin-top:30px;">
-                <script type="text/javascript" src="js/bible.js"></script>
+                <script type="text/javascript" src="js/bible2.js"></script>
                 <script type="text/javascript" src="js/contents.js"></script>
 		</div>
 	</section>
