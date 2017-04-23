@@ -10,11 +10,6 @@ body {
     background: #f9f9f9;
     color: #000000;
 }
-h1, h2, h3 {
-    margin: 0;
-    text-rendering: optimizeLegibility;
-    color: #000000;
-}
 #navbar {
     height:3em;
     background: #e22626;
