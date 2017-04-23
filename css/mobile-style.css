@@ -70,7 +70,13 @@ body {
 }
 a.contentslinks {
     text-decoration: none;
-    color:#000000;
+    color: #000000;
+    display: block;
+    padding: 20px;
+    margin-left: -5px;
+    text-align: center;
+    width: 100%;
+    border-top: solid 1px #000000;
 }
 a.contentslinks:visited {
     color:#000000;
@@ -80,6 +86,10 @@ a.contentslinks:active {
 }
 #nt {
     font-size: 1.5em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
 }
 #main {
     margin: auto;
@@ -110,4 +120,9 @@ a.contentslinks:active {
 .note {
     display: none;
     color: blue;
+}
+#aboutapp {
+    font-size: 1.5em;
+    color: #000000;
+    text-decoration: underline;
 }
