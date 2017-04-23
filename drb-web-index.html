@@ -7,45 +7,53 @@
 	<title>The Challoner Bible</title>
         <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>      
         <script type="text/javascript" charset="utf-8">
+
              function onLoad()
              {
                   document.addEventListener("deviceready", onDeviceReady, true);
              }
+
              function onDeviceReady()
              {
                   // navigator.notification.alert("PhoneGap is working");
              }
+
         </script>
 
-<script type="text/javascript" charset="utf-8">
+<!-- <script type="text/javascript" charset="utf-8">
+
              document.addEventListener("deviceready", onDeviceReady, true);
+
              function onDeviceReady()
              {     
                    document.addEventListener("backbutton", BackKeyDown, true);
              }
+
              function BackKeyDown()
              {
                  navigator.notification.alert();
                  //navigator.app.exitApp();  // For Exit Application
              }
-        </script>
+        </script> -->
 	<script type="text/javascript">
 		var shiftWindow = function() { scrollBy(0, -60) };
 		if (location.hash) shiftWindow();
 		window.addEventListener("hashchange", shiftWindow);
 	</script>
 	<script type="text/javascript">
-    function toggleverses() {
-    var x = document.getElementsByClassName("vnumber");
-    var i;
-    for (i = 0; i < x.length; i++) {if (x[i].style.display == 'none') {x[i].style.display = 'inline';} else {x[i].style.display = 'none';};}
-    }
+        function toggleverses() {var i;for (i = 0; i < document.getElementsByClassName("vnumber").length; i++) {if (document.getElementsByClassName("vnumber")[i].style.display == 'none') {document.getElementsByClassName("vnumber")[i].style.display = 'inline';} else {document.getElementsByClassName("vnumber")[i].style.display = 'none';};};}
     </script>
     <script type="text/javascript">
-    function versetoggleron() {document.getElementById("versetoggler").style.display = 'block';}
+        function toggletoggler() {if (document.getElementById('versetoggler').innerHTML.indexOf('Verse #s: ☒')!=-1) {document.getElementById('versetoggler').innerHTML = 'Verse #s: ☐';} else {document.getElementById('versetoggler').innerHTML = 'Verse #s: ☒';};}
     </script>
     <script type="text/javascript">
-    function versetoggleroff() {document.getElementById("versetoggler").style.display = 'none';}
+        function versetoggleron() {document.getElementById("versetoggler").style.display = 'block';}
+    </script>
+    <script type="text/javascript">
+        function versetoggleroff() {document.getElementById("versetoggler").style.display = 'none';}
+    </script>
+    <script type="text/javascript">
+        function chapbutton() {if (parentNode.className == 'hiding') {parentNode.className = 'showing';} else {parentNode.className = 'hiding';};}
     </script>
 	<meta name="description" content="The Challoner Bible">
 	<meta name="author" content="Dan Marcum dmar198@gmail">
@@ -56,12 +64,12 @@
 <body onload="onLoad();CONTENTS();">
 <div style="max-width: 600px;margin: auto;border: solid 1px #000000;">
 	<header>
+	<span onclick="toggleverses();toggletoggler();" id="versetoggler">Verse #s: ☒</span>
 		<div id="navbar">
                 <a  href="#contents"><img src="menu_icon.png" id="menubutton" onclick="if (document.getElementById('contents').style.display === 'block') {document.getElementById('contents').style.display = 'none';} else {document.getElementById('contents').style.display = 'block';};versetoggleroff();" /></a>
                 The Challoner Bible
                 <a  href="#contents"><img src="home_icon.png" id="homebutton" onclick="CONTENTS();document.getElementById('contents').style.display = 'none';versetoggleroff();" /></a>
 		</div>
-	<span onclick="toggleverses()" id="versetoggler">Toggle verses</span>
 	</header>
         
         <div id="contents">
