@@ -58,7 +58,7 @@ body {
     padding: 3px;
 }
 #contents {
-    padding-top: 6em;
+    padding-top: 4em;
     font-size: .8em;
     background: #ffffff;
     display: none;
@@ -99,6 +99,8 @@ a.contentslinks:active {
 }
 #bibletext {
     margin-top: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .hiding div {
     display: none;
