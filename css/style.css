@@ -46,6 +46,16 @@ h1, h2, h3 {
     margin-top: .5em;
     cursor: pointer;
 }
+#versetoggler {
+    display: none;
+    position: relative;
+    top: -.7em;
+    right: 1em;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
 #main {
     margin: 2em 1em 1em;
 }
@@ -83,4 +93,11 @@ a.contentslinks:active {
     width: 100%;
     text-align: center;
     background-color: #f0f0f0;
+}
+.notebox {
+    color: blue;
+}
+.note {
+    display: none;
+    color: blue;
 }
