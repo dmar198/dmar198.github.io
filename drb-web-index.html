@@ -40,6 +40,10 @@
 		if (location.hash) shiftWindow();
 		window.addEventListener("hashchange", shiftWindow);
 	</script>
+	<script type="text/javascript" src="js/bible.js"></script>
+    	<script type="text/javascript" src="js/contents.js"></script>
+    	<script type="text/javascript" src="js/about.js"></script>
+    	<script type="text/javascript" src="js/settings.js"></script>
 	<script type="text/javascript">
         function toggleverses() {var i;for (i = 0; i < document.getElementsByClassName("vnumber").length; i++) {if (document.getElementsByClassName("vnumber")[i].style.display == 'none') {document.getElementsByClassName("vnumber")[i].style.display = 'inline';} else {document.getElementsByClassName("vnumber")[i].style.display = 'none';};};}
     </script>
@@ -151,11 +155,7 @@
         </div>
     
 	<section id="main" role="main">
-		<div id="bibletext" style="margin-top:30px;">
-                <script type="text/javascript" src="js/bible2.js"></script>
-                <script type="text/javascript" src="js/contents.js"></script>
-		<script type="text/javascript" src="js/about.js"></script>
-		</div>
+		<div id="bibletext" style="margin-top:30px;"></div>
 	</section>
 
 	<footer></footer>
