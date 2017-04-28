@@ -122,7 +122,6 @@ body {
     padding: 1em;
 }
 #contents {
-    padding-top: 1em;
     font-size: .8em;
     background: #ffffff;
     display: none;
@@ -136,7 +135,7 @@ body {
     text-decoration: none;
     color: #000000;
     display: block;
-    padding-top: -.9em;
+    padding-top: .9em;
     text-align: center;
     width: 100%;
     border-top: none;
