@@ -48,14 +48,78 @@ body {
 }
 #versetoggler {
     display: none;
-    height: 30px;
     position: relative;
-    top: 2.3em;
+    top: -.7em;
     right: 1em;
     cursor: pointer;
     float: right;
     border: solid 3px #000000;
     padding: 3px;
+}
+#versetoggler2 {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#versescheck {
+}
+#commenttoggler {
+    display: none;
+    position: relative;
+    top: -.7em;
+    right: 1.7em;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#commenttoggler2 {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#boxtoggler {
+    display: none;
+    position: relative;
+    top: -.7em;
+    right: 1.7em;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#boxtoggler2 {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#noteforaudio {
+    display: none;
+    position: relative;
+    top: -.7em;
+    right: 1.7em;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#noteforaudio2 {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    border: solid 3px #000000;
+    padding: 3px;
+}
+#main {
+    margin: auto;
+    max-width: 600px;
+    padding: 1em;
 }
 #contents {
     padding-top: 1em;
@@ -67,6 +131,40 @@ body {
     max-width: 600px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+#menubar {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding-top: .9em;
+    text-align: center;
+    width: 100%;
+    border-top: none;
+    height: 4.5em;
+    vertical-align: center;
+    background-color: #cccccc;
+    width: 105%;
+    margin-left: -15px;
+    margin-top: -3px;
+}
+#aboutlink {
+    float: left;
+    width: 50%;
+    display: block;
+    line-height: 2.9em;
+    height: 2.9em;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #000000;
+}
+#settings {
+    float: right;
+    width: 50%;
+    display: block;
+    line-height: 2.9em;
+    height: 2.9em;
+    text-align: center;
+    cursor: pointer;
 }
 a.contentslinks {
     text-decoration: none;
@@ -91,12 +189,6 @@ a.contentslinks:active {
     width: 100%;
     padding-top: 20px;
 }
-#main {
-    margin: auto;
-    /* margin: 2em 1em 1em; */
-    max-width: 600px;
-    padding: 1em;
-}
 #bibletext {
     margin-top: 30px;
     overflow: hidden;
@@ -115,13 +207,18 @@ a.contentslinks:active {
     width: 100%;
     text-align: center;
     background-color: #f0f0f0;
+    cursor: pointer;
 }
 .notebox {
     color: blue;
+    cursor: pointer;
 }
 .note {
     display: none;
     color: blue;
+}
+.vnumber {
+    font-weight: bold;
 }
 #aboutapp {
     font-size: 1.5em;
