@@ -3,7 +3,7 @@
 body {
 	color:black;
 	font:normal 11pt serif;
-	background-image:url(../images/sandy-background-pattern.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/sandy-background-pattern.png);
 }
 div {
 	color:black;
@@ -36,13 +36,13 @@ div.wrapper1 {
 	top:0px;
 	left:0px;
 	padding:0px;
-	background-image:url(../images/bg.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/bg.png);
 	background-repeat:repeat-x;
 }
 div.wrapper2 {
 	width:950px;
 	min-height:490px;
-	background-image:url(../images/container-background.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/container-background.png);
 	background-repeat:no-repeat;
 	background-position:center top;
 	margin:0px auto;
@@ -174,7 +174,7 @@ div.sidebar {
 div.sidehead {
 	width:100%;
 	height:30px;
-	background-image:url(../images/titlebg_right.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/titlebg_right.png);
 }
 span.sidehead {
 	letter-spacing:-1px;
@@ -193,7 +193,7 @@ input.search {
 	border-width:1px;
 	border-color:#000000;
 	padding:2px;
-	background-image:url(../images/rightnavbg.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/rightnavbg.png);
 	background-position:bottom left;
 	background-repeat:repeat-x;
 	position:absolute;
@@ -202,7 +202,7 @@ input.search {
 div.sidelink {
 	width:100%;
 	height:28px;
-	background-image:url(../images/rightnavbg.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/rightnavbg.png);
 	background-repeat:repeat-x;
 	position:relative;
 }
@@ -232,7 +232,7 @@ a.sidelinks:hover {
 div.footer---this-page-only {
 	width:960px;
 	height:30px;
-	background-image:url(../images/rightnavbg.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/rightnavbg.png);
 	background-repeat:repeat-x;
 	background-position:0px -14px;
 	font:normal 10pt serif;
@@ -248,7 +248,7 @@ div.title-bar {
 	width:720px;
 	height:25px;
 	position:relative;
-	background-image:url(../images/rightnavbg.png);
+	background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/rightnavbg.png);
 	background-repeat:repeat;
 	background-position:0px -10px;
 	font:bold 12pt serif;
@@ -436,16 +436,16 @@ table.project-table {width:950px;height:350px;margin-top:-10px;}
 td.project-cell {width:300px;vertical-align:center;}
 a.project-link {display:block;width:250px;height:300px;text-decoration:none;color:#000000;}
 
-div.project1 {width:250px;height:320px;text-align:center;background-image:url(../images/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
+div.project1 {width:250px;height:320px;text-align:center;background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
 div.project1:hover {border:7px ridge yellow;}
-div.project2 {width:250px;height:320px;text-align:center;background-image:url(../images/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
+div.project2 {width:250px;height:320px;text-align:center;background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
 div.project2:hover {border:7px ridge yellow;}
-div.project3 {width:250px;height:320px;text-align:center;background-image:url(../images/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
+div.project3 {width:250px;height:320px;text-align:center;background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
 div.project3:hover {border:7px ridge yellow;}
 
 div.person-wrapper {position:relative;left:10px;}
 
-div.person-header {width:100%;height:200px;background-image:url(../images/rightnavbg.png);background-position:-10px 0px;background-repeat:repeat-x;}
+div.person-header {width:100%;height:200px;background-image:url(https://raw.githubusercontent.com/dmar198/dmar198.github.io/master/emmausroundtable/rightnavbg.png);background-position:-10px 0px;background-repeat:repeat-x;}
 div.picture-box {width:100px;height:100px;position:relative;border:solid;background-color:#aaffff;}
 div.person-title {font:normal 15pt Arial, sans-serif;position:relative;left:10px;top:5px;}
 div.person-text {position:relative;left:10px;top:20px;}
