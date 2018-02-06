@@ -1,0 +1,468 @@
+/* Header */
+
+body {
+	color:black;
+	font:normal 11pt serif;
+	background-image:url(../images/sandy-background-pattern.png);
+}
+div {
+	color:black;
+	font:normal 11pt serif;
+}
+a {
+	color:blue;
+	font:normal 11pt serif;
+}
+span {
+	color:black;
+	font:normal 11pt serif;
+}
+table {
+	color:black;
+	font:normal 11pt serif;
+}
+th {
+	color:black;
+	font:normal 11pt serif;
+}
+td {
+	color:black;
+	font:normal 11pt serif;
+}
+div.wrapper1 {
+	width:100%;
+	min-height:490px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+	background-image:url(../images/bg.png);
+	background-repeat:repeat-x;
+}
+div.wrapper2 {
+	width:950px;
+	min-height:490px;
+	background-image:url(../images/container-background.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+	margin:0px auto;
+	position:relative;
+}
+
+table.menu-bar {
+	display:block;
+	width:952px;
+	position:absolute;
+	top:149px;
+	left:220px;
+	border-collapse:collapse;
+}
+a.menu-bar {
+	display:block;
+	height:52px;
+	text-decoration:none;
+	color:#eeeeee;
+	font:bold 12pt Arial, sans-serif;
+	letter-spacing:-1px;
+	line-height:52px;
+}
+td.menu-bar {
+	height:52px;
+	width:98px;
+	text-align:center;
+	color:#eeeeee;
+	font:bold 12pt Arial, sans-serif;
+	letter-spacing:-1px;
+	position:inherit;
+	position:relative;
+}
+td.menu-bar:hover {
+	background-color:#bb0000;
+}
+td.menu-bar:hover div.drop-box-1 {
+	display:block;
+}
+td.menu-bar:hover div.dropper1 {
+	display:block;
+}
+td.questions {
+	height:52px;
+	width:152px;
+	text-align:center;
+	color:#eeeeee;
+	font:bold 12pt Arial, sans-serif;
+	letter-spacing:-1px;
+	position:inherit;
+}
+td.questions:hover {
+	background-color:#bb0000;
+}
+td.questions:hover div.drop-box-1 {
+	display:block;
+}
+a.dropper2 {
+	display:block;
+	text-decoration:none;
+	color:inherit;
+	font:bold 12pt Arial, sans-serif;
+	margin-left:5px;
+}
+div.positioner {
+	position:relative;
+}
+div.drop-box-1 {
+	display:none;
+	width:150px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-color:#bb0000;
+}
+div.dropper1 {
+	display:block;
+	width:150px;
+	background-color:#bb0000;
+	text-align:left;
+	color:white;
+	font:bold 11pt Arial, sans-serif;
+	border:solid 1px black;
+	border-right:0px;
+	border-left:0px;
+	position:relative;
+	padding:10px 0px;
+}
+div.dropper1:hover {
+	background-color:yellow;
+	color:#bb0000;
+}
+div.dropper1:hover div.drop-box-2 {
+	display:block;
+	width:150px;
+	position:absolute;
+	left:150px;
+	top:-1px;
+	background-color:#bb0000;
+}
+div.drop-box-2 {
+	display:none;
+}
+div.dropper2 {
+	display:block;
+	width:100%;
+	background-color:#bb0000;
+	text-align:left;
+	color:white;
+	font:bold 11pt Arial, sans-serif;
+	border:solid 1px black;
+	border-right:0px;
+	border-left:0px;
+	position:relative;
+	padding: 5px 0px;
+}
+div.dropper2:hover {
+	background-color:yellow;
+	color:#bb0000;
+}
+/* Sidebar */
+
+div.sidebar {
+	width:190px;
+	position:absolute;
+	left:20px;
+	top:200px;
+}
+div.sidehead {
+	width:100%;
+	height:30px;
+	background-image:url(../images/titlebg_right.png);
+}
+span.sidehead {
+	letter-spacing:-1px;
+	font:bold 11pt Arial, sans-serif;
+	color:#ffffff;
+	text-align:left;
+	position:relative;
+	left:5px;
+	top:6px;
+}
+input.search {
+	display:block;
+	width:175px;
+	height:16px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+	padding:2px;
+	background-image:url(../images/rightnavbg.png);
+	background-position:bottom left;
+	background-repeat:repeat-x;
+	position:absolute;
+	top:3px;
+}
+div.sidelink {
+	width:100%;
+	height:28px;
+	background-image:url(../images/rightnavbg.png);
+	background-repeat:repeat-x;
+	position:relative;
+}
+span.sidelink {
+	font:normal 8pt Verdana, sans-serif;
+	text-align:left;
+	position:relative;
+	left:5px;
+	top:6px;
+}
+span.cuf-news {
+	position:absolute;
+	left:10px;
+	top:24px;
+	font:normal 8pt Arial, sans-serif;
+}
+a.sidelinks {
+	text-decoration:none;
+	color:black;
+	font:normal 8pt Verdana, sans-serif;
+}
+a.sidelinks:hover {
+	text-decoration:underline;
+}
+/* Footer (Note: on this page, the footer has been moved 30px downward using position:relative. That was unnecessary on older pages.) */
+
+div.footer---this-page-only {
+	width:960px;
+	height:30px;
+	background-image:url(../images/rightnavbg.png);
+	background-repeat:repeat-x;
+	background-position:0px -14px;
+	font:normal 10pt serif;
+	text-align:center;
+	line-height:9px;
+	position:relative;
+	top:30px;
+	margin-left:-220px;
+}
+/* Homepage info */
+
+div.title-bar {
+	width:720px;
+	height:25px;
+	position:relative;
+	background-image:url(../images/rightnavbg.png);
+	background-repeat:repeat;
+	background-position:0px -10px;
+	font:bold 12pt serif;
+	padding:5px;
+	line-height:26px;
+	z-index:1;
+}
+div.about-us-stuff {
+	margin-left:20px;
+	width:700px;
+	font:normal 11pt serif;
+	line-height:18px;
+}
+img.about-us-image {
+	float:right;
+	padding:2px;
+	border:2px solid;
+	background-color:white;
+	margin: 0px 0px 10px 20px;x
+}
+h4.headline {
+	font:bold 14pt serif;
+}
+/* Content that changes depending on the page you're on */
+
+div.changing-content-wrapper {
+	width:732px;
+	position:relative;
+	left:220px;
+	z-index:1;
+	top:220px;
+}
+/* 3 Pics with Links to Recent Articles */
+
+div.artsylinks {
+	position:absolute;
+	top:143px;
+	left:0px;
+}
+div.artsypics1 {
+	width:240px;
+	height:128px;
+	position:relative;
+	top:-143px;
+	background-image:url(http://upload.wikimedia.org/wikipedia/commons/f/f8/Drama-icon.png);
+	background-position:50% -55px;
+	background-repeat:no-repeat;
+	border-style:solid;
+	border-width:2px;
+	background-color:#000000;
+	float:left;
+}
+div.artsypics2 {
+	width:240px;
+	height:128px;
+	position:relative;
+	top:-143px;
+	background-image:url(http://upload.wikimedia.org/wikipedia/commons/d/d2/Darwin-chart.PNG);
+	background-position:50% -55px;
+	background-repeat:no-repeat;
+	border-style:solid;
+	border-width:2px;
+	background-color:#000000;
+	float:left;
+}
+div.artsypics3 {
+	width:240px;
+	height:128px;
+	position:relative;
+	top:-143px;
+	background-image:url(http://upload.wikimedia.org/wikipedia/commons/b/be/Muhammad_face.gif);
+	background-position:50% -40px;
+	background-repeat:no-repeat;
+	border-style:solid;
+	border-width:2px;
+	background-color:#000000;
+	float:left;
+}
+a.artsypics {
+	display:block;
+	width:230px;
+	line-height:30px;
+	background:black;
+	padding:0px;
+	color:#ffffff;
+	text-decoration:none;
+}
+a.artsypics:link {
+	color:#ffffff;
+}
+a.artsypics:visited {
+	color:#ffffff;
+}
+a.artsypics:hover {
+	color:#ffffff;
+	text-decoration:underline;
+}
+a.artsypics:active {
+	color:#ffffff;
+}
+a.artsytext {
+	display:block;
+	width:230px;
+	line-height:30px;
+	background:black;
+	padding:0px;
+	color:#ffffff;
+}
+
+/* stuff added to make sense of this hotmess */
+
+.returnHome{
+	width: 500px;
+	height: 150px;
+	top: 0px;
+	position: absolute;
+	left: 150px;
+}
+
+
+
+#nav{
+    list-style:none;
+    font-weight:bold;
+    margin-bottom:10px;
+    float:left;
+    width:100%;
+    <span class="code-comment">/* Bring the nav above everything else--uncomment if needed.
+    position:relative;
+    z-index:5;
+    */</span>
+}
+#nav li{
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+#nav a{
+    display:block;
+    padding:5px;
+    color:#fff;
+    background:#333;
+    text-decoration:none;
+}
+#nav a:hover{
+    color:#fff;
+    background:#6b0c36;
+    text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+    background:#fff; 
+    background:rgba(255,255,255,0); 
+    list-style:none;
+    position:absolute;
+    left:-9999px; 
+}
+#nav ul li{
+    padding-top:1px; 
+    float:none;
+}
+#nav ul a{
+    white-space:nowrap; 
+}
+#nav li:hover ul{ 
+    left:0; 
+}
+#nav li:hover a{ 
+    background:#6b0c36;
+    text-decoration:underline;
+}
+#nav li:hover ul a{ 
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover{ 
+    background:#333;
+}</code>
+
+
+
+
+
+table.project-table {width:950px;height:350px;margin-top:-10px;}
+td.project-cell {width:300px;vertical-align:center;}
+a.project-link {display:block;width:250px;height:300px;text-decoration:none;color:#000000;}
+
+div.project1 {width:250px;height:320px;text-align:center;background-image:url(../images/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
+div.project1:hover {border:7px ridge yellow;}
+div.project2 {width:250px;height:320px;text-align:center;background-image:url(../images/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
+div.project2:hover {border:7px ridge yellow;}
+div.project3 {width:250px;height:320px;text-align:center;background-image:url(../images/blue-gradient.png);background-repeat:repeat-x;background-color:white;border:3px double #000000;position:relative;top:0px;left:0px;}
+div.project3:hover {border:7px ridge yellow;}
+
+div.person-wrapper {position:relative;left:10px;}
+
+div.person-header {width:100%;height:200px;background-image:url(../images/rightnavbg.png);background-position:-10px 0px;background-repeat:repeat-x;}
+div.picture-box {width:100px;height:100px;position:relative;border:solid;background-color:#aaffff;}
+div.person-title {font:normal 15pt Arial, sans-serif;position:relative;left:10px;top:5px;}
+div.person-text {position:relative;left:10px;top:20px;}
+td.person-td {width:250px;}
+
+div.showing-answer div {display:block;} 
+div.hiding-answer div {display:none;} 
+div.answer {position:relative;}
+
+div.vid-description1 {position:relative;left:430px;top:-340px;display:block;width:250px;height:180px;background-color:#333333;border:solid;border-color:#777777;font:normal 11pt Arial,sans-serif;color:#ffffff;z-index:3;}
+
+div.vid-description2 {position:relative;left:430px;top:-340px;display:block;width:250px;height:180px;background-color:#333333;border:solid;border-color:#777777;font:normal 11pt Arial,sans-serif;color:#ffffff;z-index:3;}
+
+div.vid-description3 {position:relative;left:445px;top:-340px;display:block;width:250px;height:180px;background-color:#333333;border:solid;border-color:#777777;font:normal 11pt Arial,sans-serif;color:#ffffff;z-index:3;}
+
+div.eighth {position:relative;top:-1060px;margin-top:-391px;visibility:hidden;}
+div.vid-description8 {position:relative;left:430px;top:-1400px;display:block;width:250px;height:180px;background-color:#333333;border:solid;border-color:#777777;font:normal 11pt Arial,sans-serif;color:#ffffff;z-index:3;visibility:hidden;}
+
+div.longer-talks {width:50%;}
+div.shorter-talks {position:relative;left:15px;}
