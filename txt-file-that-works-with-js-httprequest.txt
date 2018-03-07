@@ -1,1 +1,8 @@
-This is a simple test. If the text appears in my httprequest, great. <span style="font-weight:bold;">Otherwise</span>, will keep working.
+This is a simple test. If the text appears in my httprequest, great. <span style="font-weight:bold;">Otherwise</span>, will keep working.<br /><br />Remember to include the following info in your config file:
+<br /><br />
+<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+<br /><br />
+<access origin="*" /><br />
+<allow-intent href="http://*/*" /><br />
+<allow-intent href="https://*/*" /><br />
+<allow-navigation href="*" />
