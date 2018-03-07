@@ -2,7 +2,7 @@ This is a simple test. If the text appears in my httprequest, great. <span style
 <br /><br />
 <gap:plugin name="cordova-plugin-whitelist" source="npm" />
 <br /><br />
-&lt;access origin="*" /&rt;<br />
-&lt;allow-intent href="http://*/*" /&rt;<br />
-&lt;allow-intent href="https://*/*" /&rt;<br />
-&lt;allow-navigation href="*" /&rt;
+&lt;access origin="*" /&gt;<br />
+&lt;allow-intent href="http://*/*" /&gt;<br />
+&lt;allow-intent href="https://*/*" /&gt;<br />
+&lt;allow-navigation href="*" /&gt;
