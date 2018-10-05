@@ -1,1 +1,1 @@
-document.write("<\?xml version=\"1.0\" encoding=\"UTF-8\" \?><html><head><style type=\"text/css\">body {padding-top:0px;}<\/style><\/head><body><div style=\"max-width: 600px;margin: auto;border: solid 1px #000000;\">Hello<\/div><\/body><\/html>");
+document.write("<\?xml version=\"1.0\" encoding=\"UTF-8\" \?><html><head><style type=\"text/css\">body {padding:0px;margin:0;}<\/style><\/head><body><div style=\"max-width: 600px;margin: auto;border: solid 1px #000000;\">Hello<\/div><\/body><\/html>");
