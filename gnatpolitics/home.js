@@ -7,8 +7,8 @@ document.write("div.showing-answer div {display:block;} div.hiding-answer div {d
 //remember to swap out js.js in the next line for this: https://rawgit.com/dmar198/dmar198.github.io/master/gnatpolitics/js.js
 
 document.write("<script src=\"https://rawgit.com/dmar198/dmar198.github.io/master/gnatpolitics/js.js\"></script></head>");
-document.write("<body onload=\"home();background();\">");
-document.write("<div id=\"title-div\" style=\"width:100%;height:40px;line-height:40px;font-size:40px;background-color:white;\">");
+document.write("<body onload=\"home();background();setTitleWidth();\">");
+document.write("<div id=\"title-div\" style=\"height:40px;line-height:40px;font-size:40px;background-color:white;\">");
 document.write("<center><span style=\"background-color:white;\">Gnat Politics</span></center></div>");
 document.write("<div id=\"subtitle-div\" style=\"width:100%;height:40px;line-height:40px;background-color:white;\">");
 document.write("<center><span style=\"background-color:white;\">Spreading Good News About Trump</span></center></div>");
