@@ -8,9 +8,9 @@ document.write("div.showing-answer div {display:block;} div.hiding-answer div {d
 
 document.write("<script src=\"https://rawgit.com/dmar198/dmar198.github.io/master/gnatpolitics/js.js\"></script></head>");
 document.write("<body onload=\"home();background();setTitleWidth();\">");
-document.write("<div id=\"title-div\" style=\"height:40px;line-height:40px;font-size:40px;background-color:white;\">");
+document.write("<div id=\"title-div\" style=\"max-width:600px;margin-auto;height:40px;line-height:40px;font-size:40px;background-color:white;\">");
 document.write("<center><span style=\"background-color:white;\">Gnat Politics</span></center></div>");
-document.write("<div id=\"subtitle-div\" style=\"width:100%;height:40px;line-height:40px;background-color:white;\">");
+document.write("<div id=\"subtitle-div\" style=\"max-width:600px;margin:auto;height:40px;line-height:40px;background-color:white;\">");
 document.write("<center><span style=\"background-color:white;\">Spreading Good News About Trump</span></center></div>");
 document.write("<div id=\"menu-div\" style=\"max-width:600px;margin:auto;height:60px;line-height:60px;border-top:1px solid black;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:white;\">");
 document.write("<div class=\"menubuttons\" onclick=\"home();\">Home</div>");
