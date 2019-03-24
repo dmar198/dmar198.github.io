@@ -1,3 +1,4 @@
+function loadpage() {
 document.write("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 document.write("<html xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\" xmlns:b=\"http:\/\/www.google.com\/2005\/gml\/b\" xmlns:data=\"http:\/\/www.google.com\/2005\/gml\/data\" xmlns:expr=\"http:\/\/www.google.com\/2005\/gml\/expr\">");
 document.write("<head>");
@@ -88,3 +89,4 @@ document.write("<\/script>    ");
 document.write("");
 document.write("<\/body>");
 document.write("<\/html>");
+}
