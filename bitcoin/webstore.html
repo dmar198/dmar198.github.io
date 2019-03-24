@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+<head>
+<style>
+.wrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+</style>
+</head>
+<body>
+<div>
+    <div style="width: 180px;border: 1px solid black; display: inline-block;" align="center"><div>Item 1</div><button onclick="getInvoice('1000', 'User_Picked_1000');" id="request1000" style="maxwidth:150px;margin-bottom:10px;margin-top:20px;">1000 sats</button></div>
+  <div style="width: 180px;border: 1px solid black; display: inline-block;" align="center"><div>Item 2</div><button onclick="getInvoice('1500', 'User_Picked_1500');" id="request1500" style="max-width:150px;margin-bottom:10px;margin-top:20px;">1500 sats</button></div>
+  <div style="width: 180px;border: 1px solid black; display: inline-block;" align="center"><div>Item 3</div><button onclick="getInvoice('2000', 'User_Picked_2000');" id="request1500" style="max-width:150px;margin-bottom:10px;margin-top:20px;">2000 sats</button></div>
+  <div style="border: 1px solid black; max-width: 180px; display: inline-block;float:left;margin-right:4px;" align="center">
+    <span style="line-height:45px;font-weight:bold;">Donation Box</span>
+    <input id="donateamount" style="width:80%; margin:2px; color: #aaa;" type="text" name="amount" value="100000" onfocus="if (this.value == '100000') {changeAmount();}" onblur="if (this.value == '') {changeAmountBack();}" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br />
+    <input id="donatememo" style="width:80%; margin:2px; color: #aaa;" type="text" name="memo" value="Personalized_message" onfocus="if (this.value == 'Personalized_message') {changeMemo();}" onblur="if (this.value == '') {changeMemoBack();}" onkeypress="return event.charCode != 32 && event.charCode != 186 && event.charCode != 37 && event.charCode != 39" maxlength="25"><br />
+    <button id="donate" style="margin: 10px;" onclick="getInvoice(document.getElementById('donateamount').value, document.getElementById('donatememo').value);">Donate</button>
+  </div>
+</div>
+<br /><br />
+<div id="invoiceBox" class="wrap" style="display: none; border: 1px solid #e8e8e8; max-width: 300px; overflow: hidden;padding:20px;" align="center"><strong>Please pay this invoice</strong><br /><br /><img width="200px" height="200px" id="invoiceQR" src="http://qrickit.com/api/qr.php?qrsize=200&d=[[insert-text-here]]" /><div id="invoiceInnerBox"></div></div>
+
+<script type='text/javascript'>
+    
+function changeAmount() {
+document.getElementById("donateamount").value = '';
+document.getElementById("donateamount").style.color = '#000';
+}
+
+function changeAmountBack() {
+document.getElementById("donateamount").value = '100000';
+document.getElementById("donateamount").style.color = '#aaa';
+}
+    
+function changeMemo() {
+document.getElementById("donatememo").value = '';
+document.getElementById("donatememo").style.color = '#000';
+}
+
+function changeMemoBack() {
+document.getElementById("donatememo").value = 'Personalized_message';
+document.getElementById("donatememo").style.color = '#aaa';
+}    
+
+function getInvoice(amount, memo) {
+  
+  "use strict";
+
+  var btn1000 = document.getElementById("request1000");
+  var invoiceBox = document.getElementById("invoiceBox");
+  var invoiceInnerBox = document.getElementById("invoiceInnerBox");
+  var invoiceQR = document.getElementById("invoiceQR");
+  
+  var request = new XMLHttpRequest();
+  
+  // keep track of the request
+  request.onreadystatechange = function() {
+    // check if the response data send back to us 
+    if(request.readyState === 4) {
+      // make invoiceBox visible
+      invoiceBox.style.display = "block";
+      // uncomment the line below to see the request
+      // console.log(request);
+      // check if the request is successful
+      if(request.status === 200) {
+        // insert invoice
+        invoiceInnerBox.innerHTML = request.responseText;
+        invoiceQR.src = "http://qrickit.com/api/qr.php?qrsize=200&d=" + request.responseText;
+      } else {
+        invoiceBox.innerHTML = "An error occurred during your request: " +  request.status + " " + request.statusText;
+      }
+    }
+  }
+
+  // specify the type of request
+  request.open("GET", "http://73.18.38.217:3200/test5.php?amt=" + amount + "&memo=" + memo + "", true);
+  // send the request
+  request.send();
+  
+}
+</script>    
+
+</body>
+</html>
