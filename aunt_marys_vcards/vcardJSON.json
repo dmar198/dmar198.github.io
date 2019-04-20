@@ -1,79 +1,8 @@
 {
   "version": "3.0",
-  "fn": "Adams Caroline",
-  "org": "2019 Retreat St Charles;",
-  "email": [
-    {
-      "meta": {
-        "type": "pref"
-      },
-      "value": [
-        "sccg@sbcglobal.net"
-      ]
-    }
-  ],
-  "tel": [
-    {
-      "meta": {
-        "type": "pref"
-      },
-      "value": [
-        "(937)308-4530"
-      ]
-    }
-  ]
+  "fn": "Adams Caroline"
 }
 {
   "version": "3.0",
-  "fn": "Adams Paul",
-  "org": "2019 Retreat St Charles;",
-  "tel": [
-    {
-      "meta": {
-        "type": "pref"
-      },
-      "value": [
-        "(937) 308-4530"
-      ]
-    }
-  ]
-}
-{
-  "version": "3.0",
-  "fn": "Alexander Joan",
-  "org": "2019 Retreat Comuter;",
-  "email": [
-    {
-      "meta": {
-        "type": "pref"
-      },
-      "value": [
-        "alexj@roadrunner.com"
-      ]
-    }
-  ],
-  "tel": [
-    {
-      "meta": {
-        "type": "pref"
-      },
-      "value": [
-        "(419) 733-8367"
-      ]
-    }
-  ],
-  "adr": [
-    {
-      "meta": {
-        "type": "pref"
-      },
-      "value": [
-        "",
-        "",
-        "2082 Cassella-Montezuma Road",
-        "Maria Stein",
-        "OH"
-      ]
-    }
-  ]
+  "fn": "Adams Paul"
 }
